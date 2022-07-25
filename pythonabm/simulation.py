@@ -364,8 +364,8 @@ class Simulation(ABC):
 
             # create the agent space background image and apply background color
             image = np.zeros((y_size, x_size, 3), dtype=np.uint8)
+            
             background = (background[2], background[1], background[0])
-            image[:, :] = background
 
             # go through all of the agents
             for index in range(self.number_agents):

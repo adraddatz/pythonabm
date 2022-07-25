@@ -1,0 +1,46 @@
+# How many green-colored agents to start the simulation? Ex. 600
+num_nqo1_agents: 600
+
+# How many red-colored agents to start the simulation? Ex. 400
+num_red_agents: 400
+
+# What will the final step number be? This is used when beginning a new simulation (mode: 0). Ex. 100
+end_step: 30
+
+# What are the dimensions (xyz) of the simulation space? Ex. [100, 100, 0]
+size: [200, 200, 0]
+
+# Do you want to use NVIDIA CUDA acceleration for some computationally tasking methods? Ex. True
+cuda: False
+
+# Do you want the agent values outputted to a CSV at each step? Ex. True
+output_values: True
+
+# Do you want an image produced at each step and a video at the end of the simulation? Ex. True
+output_images: True
+
+# What is the image width in pixels? Currently, default imaging is for a 2D space, though a 3D space
+# will yield a bird's eye view of the space. Ex. 2000
+image_quality: 200
+
+# What is the video width in pixels? This will scale the step images to the video resolution (using
+# interpolation) to potentially reduce the file size of the video. Ex. 1000
+video_quality: 1000
+
+# What should the frames-per-second (FPS) of the resulting video comprised of step images be? Ex. 10
+fps: 10
+
+# Do you have diffusible species?
+is_diffusion: True
+
+# Diffusivity of each species
+diffusivities: [2500,2100]
+
+# 2D or 3D
+is_3D: True
+
+# Do you have a tumorsphere
+is_sphere: True
+
+# Radius of tumorsphere
+colony_radius: 50
